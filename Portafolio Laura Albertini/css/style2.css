@@ -1,0 +1,817 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*FONTFACE*/
+
+@font-face {
+    font-family:'Ubuntu', sans-serif; 
+    src: url(../font/Ubuntu_Condensed.ttf);
+}
+/*PARA TEXTO COLDPLAY*/
+@font-face {
+    font-family: 'Liu Jian Mao Cao', cursive;
+    src: url(..font/liujianMaoCao.ttf);
+}
+@font-face {
+    font-family: 'Macondo', cursive;
+    src: url(..font/macondo.ttf);
+}
+
+/*BODY Y HEADER*/
+body{
+    background-color:#FF7770;
+    color:#976c6c;
+    height: 100%;
+    font-family:'ubuntu';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header{
+    background-color: 
+    #fecfcc;
+    width: 100%;
+    padding: 25px 0;
+    transition: 0.15s;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    opacity: 10;
+    border: 2px solid;
+    top: 0px;
+    justify-content: flex-end;
+    box-shadow: 0px 0px 15px #000000;
+}
+/*NAVEGADOR*/
+nav{
+    max-width: 1100px;
+    margin-right: 4em;
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    justify-content: flex-end;
+    word-spacing: 2rem;
+    letter-spacing: 1px;
+}
+
+nav ul li{
+    display: inline; 
+    margin: 0 1em;
+    font-family: 'ubuntu';
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+.menubutton{ 
+    border-radius: 10px ;
+    padding: 0.9em;
+}
+.navegador1 .menubutton:hover{
+    color: #fa0602;
+    background-color: #070707;
+    transition: 0.10s;
+    padding: 15px;
+    text-emphasis-position: 15px;
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+a:hover{
+    color: #850101;
+    font-weight: bolder;
+    text-shadow: lavenderblush;
+}
+p{
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-size: x-large;
+    color: black;
+}
+
+/*PRESENTACION E IMAGEN*/
+.presentacion{
+    background-color: #f5bebe;
+    align-items: center;
+    margin: 100px;
+    width: auto;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.presentacion .hola p{
+        font-size: large;
+        padding: 5px;
+        width: 80%;
+    }
+.hola{      
+    margin-top: auto;      
+    margin-left: auto;
+} 
+h1{
+    font-family: 'macondo';
+    text-shadow: black 3px 1px 2px;
+    -webkit-text-stroke: 1px black;
+    color: rgb(255, 0, 0); 
+    font-size: xxx-large;
+    font-weight:lighter;
+}      
+h3 h2{
+    font-family: 'ubuntu';
+    padding: 10px;
+
+}
+.soy{
+    font-family: 'ubuntu';
+    width: 100%;
+    color: #000000;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size:large;
+    text-align: left;
+}
+
+
+.boton{
+    background-color:#f89b9b ;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    padding: 1em;
+    font-size: 1.25rem;
+    font-family: 'ubuntu';
+    font-weight: 900;
+    margin-top: 25px;
+}
+.boton:hover{
+    background-color: #000000;
+    color: #ff0000;
+    transition: 0.4s;
+}
+.boton-a:hover{
+    color: #ff0000;
+}
+.imagenuno{
+    width: auto;
+    text-align: justify;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 1024px) {
+    .presentacion {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 50%;  
+      margin: 0 auto;    
+    }
+    .soy{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .soy p{
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+}
+@media (max-width: 500px){
+    .presentacion{
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px){
+    .presentacion p{
+        font-size: small;
+    }
+}
+
+@media (max-width: 1024px) {
+    .imagenprinc {
+        max-width: 100%;
+    }
+}
+
+/*CONOCIMIENTOS*/
+.contenedoryconoc{
+    background-color: #fecfcc;
+    border-radius: 10px;
+    
+}
+.misconocimientos{
+    text-align: center;
+    align-items: center;
+    height: 50px;
+
+}
+
+
+/*CONTENEDOR PADRE E ICONOS*/
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    flex-direction: row;
+    font-family: 'ubuntu';
+    color: black;
+    text-align: center;
+    align-items: center;
+
+}
+.iconos{
+    border: 2px solid black;
+    width: 150px;
+    align-items: center;
+    margin: 20px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    
+}
+/*Iconos*/
+
+.contenedor .iconos .devicon{
+    width: 90px;
+    margin: auto;
+    font-size: 100px;
+    text-align: center;
+}
+
+.contenedor :hover{
+    border: 5px black;
+    transition: 2s;
+}
+
+.contenedor .iconos :hover{
+    border: none
+}  
+h2:hover{
+    color: rgb(255, 2, 2);
+}
+/*RESPONSIVE se me sale todo el estilo que hice antes *//*
+@media (max-width: 1024px) {
+    .contenedoryconoc {
+        margin-top: 10%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedoryconoc p{
+        margin: 2px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 780px) {
+    .contenedoryconoc {
+        text-align: center;
+        width: auto;
+    }
+    .contenedoryconoc p{
+        text-align: center;
+    }
+}
+
+@media (max-width: 660px) {
+    .contenedoryconoc {
+        text-align: center;
+        width: auto;
+        margin: 30px 20px;
+    }
+}
+
+@media (max-width: 570px) {
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+        margin-top: 0;
+        
+    }
+    .iconos {
+        width: 100px;
+    }
+}
+
+@media (max-width: 530px){
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .iconos{
+        border: 1px solid gray;
+    }
+*/
+/*FRASE COLDPLAY*/
+.frasecoldplay{
+        font-family: 'Liu Jian Mao Cao';
+        text-align: center;
+        color: black;
+        align-items: center;
+        font-size: 25px;
+        margin: 50px;
+        width: auto;
+        height: 35%;
+        justify-content: center;
+        border-radius: 10px;
+        border: mintcream solid 5px;
+        
+    
+    }
+
+.frasecoldplay1{
+    font-family: 'Liu Jian Mao Cao';
+    text-align: center;
+    color: black;
+    align-items: center;
+    font-size: 25px;
+    margin: 5px;
+    margin-bottom: 2%;
+}
+
+
+.Chris{
+    font-weight: lighter;
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+.imagen2{
+    width: auto;
+    size: 50px;
+    align-items: center;
+}
+
+.proyectos{
+    text-align: center;
+    color: black;
+    font-size: large;
+
+}
+/*CONTENEDOR PROYECTOS*/
+.div{
+    box-sizing: border-box;
+}
+.contenedortrabajos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    
+}
+.misproyectos .contactate{
+    font-family: 'macondo';
+    text-shadow: black 3px 1px 2px;
+    -webkit-text-stroke: 1px black;
+    color: rgb(255, 43, 6); 
+    font-size: xxx-large;
+    font-weight:lighter;
+
+}
+.imagenes{
+        border: 2px solid rgb(0, 0, 0);
+        width: 150px;
+        height: 150px;
+        margin-top: 3%;
+        border-radius: 3px;
+        background-color: rgb(255, 255, 255);
+        padding: 5%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+}
+.cajacontacto{
+    width: 100%;
+    display: flex;
+    background-color: #FFD8CC;
+    border-radius: 35px;
+    box-shadow: 0px 0px 15px #FFD8CC;
+    
+}
+.escribime{
+    display: flex;
+    border-radius: 30px;
+    background-color: #FFEEDB;
+    width: 85%;
+    margin: 10em auto;
+    box-shadow: 0px 0px 15px #FFEEDB;
+}
+.contactonombre{
+    display: flex; 
+    margin-top: 1.25em;
+   
+}
+.cajacontacto{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 4em;
+    margin-top: 3.125em; 
+    margin-bottom: 5em;
+
+}
+.pencontacto{
+    font-family:  "ubuntu";
+    margin-top: 1.875em;
+    letter-spacing: 3px; 
+    font-size: large;  
+}
+.misredes{
+    margin-top: 1.875em;
+}
+.fab{
+    font-size: 2rem;
+    
+}
+.links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1.25em;
+    /*width: 2.5em;
+    height: 2.5em;
+    border-radius: 70%;
+    border: #0A1D37 1px solid;
+    padding-left: 0.5em;*/
+}
+.redes:hover{
+    
+    color:#ff9090;
+}
+.redes{
+    font-family:  "ubuntu";
+    font-weight: bold;
+    margin-left: 1.25em;
+    font-size: medium;
+}
+.redes:hover{
+    color: #ffffff;
+}
+label{
+    font-family:  "ubuntu";
+    font-weight: bold;
+    display: block;
+    margin: 0.5em 0;
+}
+.inputnombre{
+    border-radius: 20px;
+    width: 90%;
+    height: 3em;
+    border: 1px solid #FFEEDB;
+    padding-left: 1.25em;
+}
+.email{
+    margin-top: 1.875em;   
+}
+.boton2{
+background-color:#FFBD9B ;
+color: #0A1D37;
+border: none;
+border-radius: 20px;
+padding: 1em;
+font-size: 1.35rem;
+font-family:  "ubuntu";
+font-weight:900;
+margin-top: 0.625em;
+}
+.boton2:hover{
+background-color: #0A1D37;
+color: #FFEEDB;
+transition: 0.4s;
+}
+.inputemail{
+    width: 75%;
+    margin-bottom: 0.625em;
+    border-radius: 1.25em;
+    height: 3em;
+    border: 1px solid #FFEEDB;
+    padding-left: 1.25em;
+}
+.redondeado{
+    width: 80%;
+    font-family:  "ubuntu";
+    border-radius: 15px;
+    height:10em;
+    padding-left: 1.25em;
+    padding-top: 0.625em;
+    resize: none;    
+}
+.nombreyapellido{
+    display: block;  
+    margin: 0.188em;
+}
+footer{
+    
+    background-color: #db3131;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 15px #000000;
+    background-color: #f5bebe;
+    align-items: center;
+    margin: 100px;
+    width: auto;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.contenedor-footer{
+    display: flex;
+    flex-direction: column;
+}
+.nav-footer{
+    text-align: center;
+    line-height: 6.563em;
+    font-family:  "ubuntu";
+    color: white;
+    margin-top: 1.875em;
+    font-size: large;
+}
+.nav-links{
+    margin: 0 1.25em;
+}
+.iconos-footer{
+    text-align: center;
+    margin-top: 1.25em;
+    color: rgb(255, 0, 0);
+}
+#iconos-footer-dos{
+    display: inline;
+    text-align: center;
+    font-size: 1.875rem;
+    margin: 0 1.25em;
+}
+#iconos-footer-dos:hover{
+    background-color:#000000;
+    color: #ffffff;
+}
+/*RESPONSIVE NOSE PQ NO ME FUNCIONA
+@media (min-width: 0px) and (max-width: 1000px) {
+    header{
+        display: none;
+    }
+}
+@media (max-width:1200px){
+    .contacto{
+        background-color: #FFEEDB;
+        width: 100%; 
+       }
+}    .contenedor{
+    width: 60%;
+    }
+    .contenedortrabajos{
+    width: 80%;
+}
+@media (max-width:1024px){
+    .presentacion{
+        display: block;  
+    }
+    .imagenuno{
+        margin-top: 50px;
+    }
+    .escribime{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+@media (max-width:768px){
+    .lau{
+        font-size: 2.3rem;
+    }
+    .texto{
+        font-size: 2rem;
+    }
+    .texto{
+        font-size: large;
+    }
+   .nav-footer{
+       display: none;
+   }
+}
+@media (max-width:480px){
+    .misconocimientos{
+        font-size: small;
+    }
+    .contenidofrase .frasecoldplay1{
+        font-size: 1rem;
+    }
+    .conocimientos{
+        font-size: 1.8rem ;
+    }
+    .misproyectos{
+        font-size: medium;
+    }
+    .cajacontactame{
+        min-width: 50%;
+        margin-left: 10px;
+    }
+   .contactoynombre{
+       display: flex;
+       flex-direction: column;
+   }
+   .contactate{
+       font-size: 2.3rem;
+    }
+   .pencontacto{
+       font-size:medium ;
+   }
+   .inputnombre{
+       width: 170%;
+    }
+    .inputemail{
+        width: 170%;
+    }
+    .redondeado{
+        width: 170%;
+    }
+   .tituloescribime{
+        font-size: 1.6rem;
+    }
+    #iconos-footer-dos{
+        margin: 0 1.10rem;
+    }
+}
+@media (max-width:320px){
+    .contenidofrase .frasecoldplay1{
+        font-size: 0.8rem;
+    }
+    
+    .misproyectos{
+        font-size: 1.6rem;
+    }
+    .pproyectos{
+        font-size: small;
+    }
+    .cajacontacto{
+        min-width: 50%;
+        margin-left: 10px;
+    }
+    .contactate{
+        font-size: 2rem;
+    }
+    .pencontacto{
+        font-size: small;
+    }
+    .contactame{
+        font-size: 1.3rem;
+    }
+    .link{
+        font-size: small;
+    }
+    #iconos-footer-dos{
+        margin: 0 1rem;
+    }
+    .inputnombre{
+        width: 180%;
+    }
+    .inputemail{
+        width: 175%;
+    }
+    .redondeado{
+        width: 175%;
+    }
+}
+/*CONTACTO*/
+/*.contacto{
+    margin: 7%;
+    width: auto;
+    border-radius: 5px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #b87575;
+    color: white;
+    padding: 90px;
+    align-items: center;
+}
+*/
+/*Caja padre con h1, p e iconos*/
+.contactame{
+    width: 50%;
+    margin-right: 10%;
+    margin-bottom: 6%;    
+}
+
+.redes{
+    width: 80%;
+}
+
+/*Div hijo con la lista que dentro tiene: link, icono en el circulo y texto*/
+.misredes{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    font-weight: bold; 
+}
+
+.contacto .contactame .redes ul li{
+    text-decoration: none;
+    display: flex;  
+}
+/*Div hijo con el css para el icono dentro del circulo*/
+.misredes .redes{
+    border-radius: 50%;
+    padding: 6px;
+    margin: 1px;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    align-items: center;
+    background-color: #f0cece;
+    display: flex;
+    justify-content: center;
+}
+
+.links{
+    display:flex;
+    align-items: baseline;
+}
+/*Hover para las redes*/
+.links:hover .redes{
+    background-color:#ac5858;
+    transition: 1s;
+}
+.links:hover .texicon{
+    color:#ac5858;
+    transition: color 1s;
+}
+/*Acá comienza el css del Formulario que está dentro del section Contacto*/
+.formulario{
+    font-weight: bold;
+}
+/*Div que contiene Nombre y Apellido*/
+.nombre-apellido{
+    display: flex;
+    flex-direction: row;
+}
+
+.contacto_contenidos{
+    display: flex;
+    flex-direction: row;
+} 
+.formulario input{
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 8px;
+    width: 150px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.formulario .email{ 
+    margin-bottom: 5%;
+} 
+
+.formulario .comentarios {
+    height: 100%;
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 30px;
+    width:300px;
+    margin-top: 5px;
+}
+    
+.formulario .submit {
+    width: 100px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
+
+.formulario p{
+    margin-top: 10px;
+}
+/*Hover para Enviar!*/    
+.formulario .submit:hover {
+    background-color: coral;
+    color: white;
+    
+}
